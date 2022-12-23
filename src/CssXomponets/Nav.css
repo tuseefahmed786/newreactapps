@@ -1,0 +1,88 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Bogle", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+.header_align {
+  background-color: #0071dc;
+  color: white;
+  padding: 1.2rem 1.8rem;
+}
+.nav-item a {
+  color: white ;
+}
+.icon_align{
+  position: relative;
+  top: 1px;
+  right: 5px;
+}
+.ia_rightfirst{
+  position: relative;
+  top: 3px;
+  right: 8px;
+}
+.ia_rightsecond{
+  position: relative;
+  top: 2px;
+ 
+}
+.d-flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-g1 {
+  flex-grow: 1;
+}
+.f-g9 {
+  flex-grow: 29;
+}
+.f-g2 {
+  flex-grow: 18;
+}
+
+.nav-inner {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  height: 48px;
+  padding: 1px 16px;
+  transition: all 100ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.nav-inner:hover {
+background-color: #004484;
+} 
+.f-small {
+  font-size: 14px;
+  font-variant: all-petite-caps;
+  line-height: 17px;
+}
+input[type="search"]{
+    width: 100%;
+    padding: 13px;
+    border-radius: 32px;
+    border: none;
+    font-size: initial;
+    font-variant: all-petite-caps;
+    font-family:"Bogle", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; 
+    width: 90%;
+    width: 100%;
+    padding: 9px;
+    border-radius: 32px;
+    border: none;
+    padding-top: 12px!important;
+    padding-left: 22px;
+}
+form.nav-item {
+    width: 95%;
+    margin: auto;
+}
+.InNav{
+    position: relative;
+}

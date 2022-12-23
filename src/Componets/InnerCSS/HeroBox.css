@@ -1,0 +1,388 @@
+:root{
+    --boxShadow: 1px 1px 7px -2px rgba(0,0,0,0.75);
+   
+}
+.dp_flex_allcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroBox{
+    max-width: 1280px;
+    margin: auto;
+    height: 100vh;
+}
+
+.heroBox_img{
+    width: 778px;
+    height: fit-content;
+   
+}
+.hero_alignbox{
+    display: flex;
+ 
+    padding: 1.5rem;
+    justify-content: space-around;
+}
+.heroBox_img img{
+width: 100%;
+border-radius: 12px;
+box-shadow: var(--boxShadow);
+-webkit-box-shadow: 1px 1px 11px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 11px -3px rgba(0,0,0,0.75);
+}
+.heroBox_img_two{
+    height: 296px;
+    width: 332px;
+}
+
+.heroBox_img_two img{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--boxShadow);
+-webkit-box-shadow: 1px 1px 11px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 11px -3px rgba(0,0,0,0.75);
+}
+
+/* Next MIni */
+
+.Hminibox{
+    box-shadow: var(--boxShadow);
+    width: 394px;
+    height: 128px;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+.box_align {
+    display: flex;
+    margin-top: .7rem;
+    padding: 0px 20px;
+}
+.box_align h1{
+    font-size: 16px;
+}
+
+.customize_button{
+   
+    border-radius: 674rem;
+    font-size: .875rem;
+    color: black;
+    height: 2rem;
+    width: 3.76rem;
+    justify-content: center;
+    display: inline-flex;
+    box-shadow: inset 0 0 0 0.0625rem #2e2f32;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.Hminibox2{
+    box-shadow: var(--boxShadow);
+    width: 394px;
+    height: 212px;
+    background-color: white;
+    border-radius: 12px;
+  
+}
+
+.align_main_box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.First_AllBox{
+    display: flex;
+    flex-direction: column;
+}
+.Second_AllBox{
+    display: flex;
+}
+
+.Secondbox_mini{
+    box-shadow: var(--boxShadow);
+    background-color: white;
+    border-radius: 12px;
+}
+
+.mini{
+    width: 330px;
+    
+}
+.Box2Img_align p{
+    font-size: 14px;
+    text-align: center;
+}
+.mini2{
+    width: 330px;
+}
+
+.Hminibox2 .box_align a{
+    position: relative;
+    left: 157px;
+    
+}
+.Hminibox .box_align a{
+    position: relative;
+    left: 60px;
+}
+
+.box2_content_img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.Box2Img_align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box2Img_align img{
+    max-width: 90px;
+}
+
+.box2_content_img a{
+    color: black;
+}
+
+.box3{
+flex-wrap: wrap;
+}
+
+.width50{
+    width: 50%;
+}
+
+/* product css  align */
+
+.product_img_align{
+    max-width: 175px;
+    height: 175px;
+    position: relative;
+}
+.product_img_align img{
+width: 100%;
+height: 100%;
+}
+.button_absolute{
+    position: absolute;
+    top: 160px;
+}
+.pr_button_align {
+    
+    padding-left: 8px;
+
+    padding-right: 8px;
+    box-shadow: 0 1px 2px 1px #00000026;
+    height: 2.5rem;
+    max-width:180px;
+    border-radius: 25px;
+    background-color: #0071dc;
+}
+.pr_button_align button{
+margin-left: 8px;
+    margin-right: 8px;
+background: transparent;
+border: none;
+color: white;
+font-size: 1rem;
+font-weight: 700;
+}
+.pr_button_align:hover{
+    background-color: #004f9a;
+    cursor: pointer;
+}
+.Second_align h6{
+    font-size: 18px;
+}
+
+.Second_align h6{
+    background: #e6f1fc;
+    color: #004f9a;
+    font-size: .75rem;
+}
+.price_align h2{
+    font-size: 16px;
+    margin: 0;
+    margin-top: 2.5rem;
+}
+.pr_descr_align{
+    max-width: 173px;
+    height: 66px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.pr_descr_align p{
+    font-size: 16px;
+    margin-top: 0.5em;
+    /* font-family: var(--fontchild); */
+}
+
+.product_box {
+    height: 25rem;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.shipping_align {
+    background-color: aliceblue;
+    color: #4a9ae7;
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 7px 9px;
+}
+
+.shipping_align h6{
+    margin:0;
+}
+
+.allproduct_alignments {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1181px;
+    margin: auto;  /* Here You Can Aliginments For ProductS Box */
+    margin-top: 2rem;
+    overflow: hidden;
+}
+.allproduct_alignments::after{
+    content: ">";
+
+}
+.allproduct_alignments a{
+    color: black;
+}
+
+/* Responsive Css All */
+@media screen and (max-width: 1190px) {
+    .allproduct_alignments {
+      justify-content: center;
+    }
+    .heroBox_img{
+        padding-right: 20px;
+    } 
+  }
+
+  @media screen and (max-width: 1162px) {
+.align_main_box{
+    flex-wrap: wrap;
+}
+.mini2{
+margin-top: 1.5rem;
+width: fit-content;
+}
+.heroBox_img_two{
+    display: none;
+}
+.allproduct_alignments{
+    flex-wrap: wrap;
+    margin: 0 1.5rem;
+}
+
+.allproduct_alignments a {
+    color: black;
+    flex-grow: 1;
+}
+
+.heroBox_img{
+    padding-right: 0;
+} 
+.hero_alignbox {
+    justify-content: center;
+}
+.align_main_box{
+    padding: 0 1rem;
+}
+  }
+  @media screen and (max-width: 844px) {
+    .InNav {
+        display: none;
+    }
+    #nav_in_2{
+display: none;
+    }
+    .align_main_box{
+        flex-direction: column;
+    }
+    .Hminibox2{
+        margin-bottom: 1rem;
+        width:100%;
+        height: 15rem;
+    }
+    .Hminibox{
+width: 100%;
+height: 15rem;
+    }
+    .mini,.mini2 {
+        width: 100%;
+    }
+    .hero_alignbox{
+        padding: 1rem;
+    }
+  }
+  @media screen and (max-width: 456px) {
+
+    .Hminibox .box_align a{
+        position: static;
+    }
+    .box_align{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Hminibox2 .box_align a{
+        position: static;
+    }
+    .box2_content_img{
+        flex-direction: column;
+        align-items: center;
+    }
+    .f-g1 {
+        flex-grow: 0!important;
+    }
+    .d-flex-center {
+        justify-content: flex-end!important;
+    }
+
+    .nav-inner {
+        padding: 0px 5px;
+    }
+    .S_none{
+        display: none;
+    }
+    .Hminibox2{
+height: fit-content;
+    }
+    .Box2Img_align img {
+        max-width: 100%;
+    }
+  }
+  
+   @media screen and (max-width: 278px) {
+    .box_align h1 {
+        font-size: 14px!important;
+    }
+    .d-flex-center {
+        display: block!important;
+    }
+    .hero_alignbox {
+        padding: 0.5rem;
+    }
+    .align_main_box {
+        padding: 0 0.5rem;
+    }
+    .header_align {
+        padding: 0 0.8rem!important;
+        padding-top: 12px!important;
+        padding-bottom: 5px!important;
+    }
+    .main-nav{
+        display: none!important;
+    }
+ }
+ 

@@ -1,0 +1,2 @@
+Dpname = Depraments Name pass as a props in NoneNavbar from NN Sibling (Uses Map ) function 
+NNSibling Coponets it is child NoneNavbar
