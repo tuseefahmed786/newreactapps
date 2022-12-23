@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/newreactapps/static/css/main.d1092668.css",
+    "main.js": "/newreactapps/static/js/main.96080485.js",
+    "static/js/787.bc7d429a.chunk.js": "/newreactapps/static/js/787.bc7d429a.chunk.js",
+    "static/media/heroimage1.webp": "/newreactapps/static/media/heroimage1.19a52fba71a3fe9d258c.webp",
+    "static/media/heroimage2.webp": "/newreactapps/static/media/heroimage2.b490fe59e63ebd60ccef.webp",
+    "static/media/boxpic3two.webp": "/newreactapps/static/media/boxpic3two.0eed68347b7c458c4371.webp",
+    "static/media/boxpic3three.webp": "/newreactapps/static/media/boxpic3three.7f528c8746c22a9dcb58.webp",
+    "static/media/herobox2one.webp": "/newreactapps/static/media/herobox2one.90fbaa75b00e58951708.webp",
+    "static/media/p5.webp": "/newreactapps/static/media/p5.b41c3215e29329960ba7.webp",
+    "static/media/herobox2two.webp": "/newreactapps/static/media/herobox2two.a57e104f035b6bf2de45.webp",
+    "static/media/herobox2three.webp": "/newreactapps/static/media/herobox2three.85aed4cb16ef98707a09.webp",
+    "static/media/boxpic3one.webp": "/newreactapps/static/media/boxpic3one.d7c8c6f2fdfee9342957.webp",
+    "static/media/p2.webp": "/newreactapps/static/media/p2.0a42bb8c74b8abf040bd.webp",
+    "static/media/herobox2four.webp": "/newreactapps/static/media/herobox2four.54c605b544a8795a78a0.webp",
+    "static/media/walmartLogo.svg": "/newreactapps/static/media/walmartLogo.d6ea228a23740ffc7649a5fd061c0a48.svg",
+    "static/media/boxpic3four.webp": "/newreactapps/static/media/boxpic3four.157cbbe10d9e99e74bbd.webp",
+    "static/media/heorbox1three.webp": "/newreactapps/static/media/heorbox1three.8bb4b5600dc36ada8694.webp",
+    "static/media/p4.webp": "/newreactapps/static/media/p4.a979c4cf5d35fbb71f6a.webp",
+    "static/media/heorbox1one.webp": "/newreactapps/static/media/heorbox1one.7dad91bf9ee2ab14c95f.webp",
+    "static/media/heorbox1two.webp": "/newreactapps/static/media/heorbox1two.03ee786eee66032c49e2.webp",
+    "static/media/p1.webp": "/newreactapps/static/media/p1.bddb531e0f4afa0b54e7.webp",
+    "index.html": "/newreactapps/index.html",
+    "static/media/p3.webp": "/newreactapps/static/media/p3.48f8996fa019ac541c75.webp",
+    "main.d1092668.css.map": "/newreactapps/static/css/main.d1092668.css.map",
+    "main.96080485.js.map": "/newreactapps/static/js/main.96080485.js.map",
+    "787.bc7d429a.chunk.js.map": "/newreactapps/static/js/787.bc7d429a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1092668.css",
+    "static/js/main.96080485.js"
+  ]
+}
