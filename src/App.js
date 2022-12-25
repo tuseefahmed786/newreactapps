@@ -1,21 +1,20 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import HeroSection from './Componets/HeroSection'
 import Navbar from './Componets/Navbar'
-import FullProduct from './Componets/InnerCompnets/FullProduct';
-// import SectionTwo from './Componets/SectionTwo';
+import Working from './Componets/InnerCompnets/PageWorking';
 export default function App() {
+  if(window.location.pathname === "/pageworking"){
+return <Working/>
+  }
   return (
     <>
     
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={ <Navbar/>}>
-          <Route index element={<HeroSection/>}/>
-          <Route path='/fullpage'  element={<FullProduct/>}/>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+   
+     <Navbar/>
+       <HeroSection/>
+ 
+  
     </>
   )
 }

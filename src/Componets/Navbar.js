@@ -1,6 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { useState  } from "react";
-import { Link, Outlet } from "react-router-dom";
 import WLogo from "../Assests/Logo/walmartLogo.svg";
 import "../CssXomponets/Nav.css";
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
@@ -14,7 +14,7 @@ export default function Navbar() {
   function hover() {
     setnavcheck(true);
     const gets = document.body;
-    gets.addEventListener("dblclick", () => {
+    gets.addEventListener("mousedown", () => {
       setnavcheck(false);
       
     });
@@ -33,9 +33,9 @@ export default function Navbar() {
       <div className="header_align">
         <nav className="navbar d-flex-center">
           <div className="logo_align f-g1">
-            <Link className="navbar-brand " to="">
+            <a className="navbar-brand " href="/">
               <img src={WLogo} alt="" />
-            </Link>
+            </a>
           </div>
 
           <div className="main-nav f-g2 d-flex-center">
@@ -45,9 +45,9 @@ export default function Navbar() {
                 
                   <AppsIcon  />
                 </i>
-                <Link className="nav-link active" aria-current="page" to="">
+                <a className="nav-link active" aria-current="page" to="">
                   Departments
-                </Link>
+                </a>
               </div>
               {navcheck ? <NoneNavbar /> : ""}
             </div>
@@ -56,7 +56,7 @@ export default function Navbar() {
               <i className="icon_align">
               <DragIndicatorOutlinedIcon />   
               </i> 
-                <Link className="nav-link">Services</Link>
+                <a href="/" className="nav-link">Services</a>
               </div>
             </div>
             <div className="nav-item S_none f-g9" >
@@ -74,31 +74,31 @@ export default function Navbar() {
               <i className="ia_rightfirst">
              <FavoriteBorderOutlinedIcon/>
              </i>
-                <Link className="nav-link">
+                <a href="/" className="nav-link">
                   <div className="f-small">Reorder</div>
                   <div>My Items</div>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="nav-item S_none f-g1">
               <div className="nav-inner nav-inner-right NI2">
-                <Link className="nav-link">
+                <a href="/pageworking" className="nav-link">
                   <div className="f-small">Sign In</div>
                   <div>Account</div>
-                </Link>
+                </a>
               </div>
             </div>
             <div className="nav-item f-g1">
               <div className="nav-inner nav-inner-right N3">
-                <Link className="nav-link">
+                <a href="/" className="nav-link">
                <i className="ia_rightsecond"> <LocalMallOutlinedIcon/></i>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
         </nav>
       </div>
-      <Outlet />
+   
     </>
   );
 }

@@ -59,6 +59,7 @@ box-shadow: var(--boxShadow);
     display: flex;
     margin-top: .7rem;
     padding: 0px 20px;
+    justify-content: space-between;
 }
 .box_align h1{
     font-size: 16px;
@@ -118,15 +119,8 @@ box-shadow: var(--boxShadow);
     width: 330px;
 }
 
-.Hminibox2 .box_align a{
-    position: relative;
-    left: 157px;
-    
-}
-.Hminibox .box_align a{
-    position: relative;
-    left: 60px;
-}
+
+
 
 .box2_content_img{
     display: flex;
@@ -251,10 +245,7 @@ font-weight: 700;
     margin-top: 2rem;
     overflow: hidden;
 }
-.allproduct_alignments::after{
-    content: ">";
 
-}
 .allproduct_alignments a{
     color: black;
 }
@@ -328,20 +319,8 @@ height: 15rem;
   }
   @media screen and (max-width: 456px) {
 
-    .Hminibox .box_align a{
-        position: static;
-    }
-    .box_align{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .Hminibox2 .box_align a{
-        position: static;
-    }
-    .box2_content_img{
-        flex-direction: column;
-        align-items: center;
-    }
+  
+  
     .f-g1 {
         flex-grow: 0!important;
     }
@@ -358,11 +337,21 @@ height: 15rem;
     .Hminibox2{
 height: fit-content;
     }
+   
+  }
+  @media screen and (max-width: 362px) {
     .Box2Img_align img {
         max-width: 100%;
     }
+    .box_align{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .box2_content_img{
+        flex-direction: column;
+        align-items: center;
+    }
   }
-  
    @media screen and (max-width: 278px) {
     .box_align h1 {
         font-size: 14px!important;
