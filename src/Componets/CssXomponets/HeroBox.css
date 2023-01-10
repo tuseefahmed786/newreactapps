@@ -163,9 +163,14 @@ flex-wrap: wrap;
 width: 100%;
 height: 100%;
 }
+.product_img_align img:hover{
+    scale: 1.2;
+    transition: ease-in-out .3s;
+}
 .button_absolute{
     position: absolute;
     top: 160px;
+    cursor: pointer;
 }
 .pr_button_align {
     
@@ -184,12 +189,12 @@ margin-left: 8px;
 background: transparent;
 border: none;
 color: white;
-font-size: 1rem;
+font-size: 0.9rem;
 font-weight: 700;
+cursor: pointer;
 }
 .pr_button_align:hover{
     background-color: #004f9a;
-    cursor: pointer;
 }
 .Second_align h6{
     font-size: 18px;

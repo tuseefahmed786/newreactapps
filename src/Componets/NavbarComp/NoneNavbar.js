@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import "../InnerCSS/ICNoneNav.css";
-import Ninnersibling from "./Ninnersibling";
+import "../CssXomponets/ICNoneNav.css";
+import NavbarDropDown from "./NavbarDropDown";
 export default function NoneNavbar() {
   const [innernav, setinnernav] = useState(false);
   const [nav, setnav] = useState(false);
@@ -82,8 +82,8 @@ export default function NoneNavbar() {
             </ul>
           </div>
       
-         {innernav ? <Ninnersibling depend={true} /> : ""     }
-         {nav ? <Ninnersibling depend={false} /> : ""     }
+         {innernav ? <NavbarDropDown depend={true} /> : ""     }
+         {nav ? <NavbarDropDown depend={false} /> : ""     }
          
         </div>
       </div>

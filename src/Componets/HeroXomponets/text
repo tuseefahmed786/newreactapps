@@ -1,0 +1,91 @@
+// import Box from "@mui/material/Box";
+// import ButtonGroup from "@mui/material/ButtonGroup";
+// import Button from "@mui/material/Button";
+// import AddIcon from "@mui/icons-material/Add";
+// import RemoveIcon from "@mui/icons-material/Remove";
+
+
+
+// const {dispatch} = UseShortContext()
+
+
+
+// function addTCart(e) {
+//     // setsecond(e.target.id)
+//     setCount(count + 1)
+//     setthird(true)
+//     setfour(e.target.id)
+//     setCount(0)
+
+//   }
+//   function decrease(event) {
+//     setCount((prevCount) => prevCount - 1);
+//     dispatch({
+//       type: "cart_to_out",
+//       payload: count <= 0 ? console.log("hello") :  count - 1,
+//     });
+
+//     dispatch({
+//       type: "Add_Product_out_Cart",
+//       addcartid:event.target.id
+//     })
+//   }
+
+//   function increase(event) {
+//     setCount((prevCount) => prevCount + 1);
+//     dispatch({
+//       type: "Add_to_Cart",
+//       payload: count + 1,
+//     });
+
+//     dispatch({
+//       type: "Add_Product_In_Cart",
+//       payload:prdata,
+//       addcartid:event.target.id
+//     })
+
+
+
+
+
+
+
+
+
+//   {props.idess == (third ? four:-1) ? 
+                
+
+//                   <Box
+//                     sx={{
+//                       color: "action.active",
+//                       display: "flex",
+//                       flexDirection: "column",
+//                       alignItems: "center",
+//                       "& .MuiBadge-root": {
+//                         marginRight: 4,
+//                       },
+//                     }}
+//                   >
+//                     <ButtonGroup>
+//                       <Button
+//                         aria-label="reduce"
+//                         id={props.idess}
+//                         onClick={decrease}
+//                       >
+//                         <RemoveIcon fontSize="small" />
+//                       </Button>
+//                       <h5 style={{ color: "white" }}>{count}</h5>
+//                       <Button
+//                         id={props.idess}
+//                         aria-label="increase"
+//                         onClick={increase}
+//                       >
+//                         <AddIcon fontSize="small" />
+//                       </Button>
+//                     </ButtonGroup>
+//                   </Box>
+// :
+//                   <button onClick={addTCart} id={props.idess} >Open It</button>
+//                 }
+
+//                 {count < 0 ? setthird(false) : console.log("")}

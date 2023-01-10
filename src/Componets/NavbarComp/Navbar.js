@@ -1,15 +1,21 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 import { useState  } from "react";
-import WLogo from "../Assests/Logo/walmartLogo.svg";
 import "../CssXomponets/Nav.css";
+import Wlogo from '../Assests/Logo/walmartLogo.svg'
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Badge from '@mui/material/Badge';
 import AppsIcon from "@mui/icons-material/Apps";
 import DragIndicatorOutlinedIcon from "@mui/icons-material/DragIndicatorOutlined";
-import NoneNavbar from "./InnerCompnets/NoneNavbar";
+import NoneNavbar from "./NoneNavbar";
+import { UseShortContext } from "../Context/ProductContext";
+
+
 export default function Navbar() {
   const [navcheck, setnavcheck] = useState(false);
+  const { getValue } = UseShortContext();
+  console.log(getValue);
 
   function hover() {
     setnavcheck(true);
@@ -19,23 +25,15 @@ export default function Navbar() {
       
     });
   }
- 
-
- 
-
-
-      
-
- 
 
   return (
     <>
       <div className="header_align">
         <nav className="navbar d-flex-center">
           <div className="logo_align f-g1">
-            <a className="navbar-brand " href="/">
-              <img src={WLogo} alt="" />
-            </a>
+            <Link className="navbar-brand " to="/">
+              <img src={Wlogo} alt="" />
+            </Link>
           </div>
 
           <div className="main-nav f-g2 d-flex-center">
@@ -45,9 +43,9 @@ export default function Navbar() {
                 
                   <AppsIcon  />
                 </i>
-                <a className="nav-link active" aria-current="page" to="">
+                <Link className="nav-link active" aria-current="page" to="">
                   Departments
-                </a>
+                </Link>
               </div>
               {navcheck ? <NoneNavbar /> : ""}
             </div>
@@ -56,7 +54,7 @@ export default function Navbar() {
               <i className="icon_align">
               <DragIndicatorOutlinedIcon />   
               </i> 
-                <a href="/" className="nav-link">Services</a>
+                <Link to="/" className="nav-link">Services</Link>
               </div>
             </div>
             <div className="nav-item S_none f-g9" >
@@ -74,32 +72,34 @@ export default function Navbar() {
               <i className="ia_rightfirst">
              <FavoriteBorderOutlinedIcon/>
              </i>
-                <a href="/" className="nav-link">
+                <Link to="/" className="nav-link">
                   <div className="f-small">Reorder</div>
                   <div>My Items</div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="nav-item S_none f-g1">
               <div className="nav-inner nav-inner-right NI2">
-                <a href="/pageworking" className="nav-link">
+                <Link to="/" className="nav-link">
                   <div className="f-small">Sign In</div>
                   <div>Account</div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="nav-item f-g1">
               <div className="nav-inner nav-inner-right N3">
-                <a href="/" className="nav-link">
-               <i className="ia_rightsecond"> <LocalMallOutlinedIcon/></i>
-                </a>
+                <Link to="/carts" className="nav-link">
+                <Badge color="secondary" badgeContent={getValue}>
+          <ShoppingCartIcon />
+        </Badge>
+                </Link>
               </div>
             </div>
           </div>
         </nav>
+      
       </div>
-   
+      <Outlet/>
     </>
   );
 }
-// eslint-disable-next-line no-lone-blocks

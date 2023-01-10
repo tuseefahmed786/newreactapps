@@ -1,0 +1,82 @@
+.fullpage_product {
+  margin-top: 2rem;
+}
+.left_Mini_Products {
+  max-width: 600px !important;
+}
+.left_Mini_Products div img {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+.fp_full_product {
+  padding-left: 12px;
+}
+
+.fp_full_product p {
+  font-size: 20px;
+  color: black;
+  max-width: 18rem;
+}
+
+.fp_full_product h6 {
+  font-size: 28px;
+  color: #2a8703;
+  margin: 12px 0;
+}
+.button_fullpage {
+  width: 120px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.rating {
+  display: flex;
+  align-items: center;
+}
+.br_for_Pr {
+  margin-bottom: 16px;
+  margin-top: 25px;
+}
+
+.hr_pr {
+  border: 0;
+  border-bottom: 0.0625rem solid #e3e4e5;
+  margin: 0;
+  width: 95%;
+}
+
+.productdeatils {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.same_icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.same_icon span {
+  font-size: 14px;
+}
+.same_icon span a {
+  text-decoration: underline;
+  color: black;
+}
+.marg_in {
+  margin-right: 12px;
+}
+
+.side_image {
+  max-width: 100px;
+  margin-bottom: 2.5rem;
+}
+.side_image img {
+  width: 100%;
+  aspect-ratio: 2/2;
+  object-fit: contain;
+}
+
+button {
+  background: transparent;
+  border: none;
+}

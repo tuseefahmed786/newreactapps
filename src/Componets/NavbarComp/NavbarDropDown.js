@@ -1,6 +1,6 @@
 import {React} from "react";
 
-export default function Ninnersibling(props) {
+export default function NavbarDropDown(props) {
 
 
  
@@ -42,54 +42,6 @@ function Innertd(props) {
     </>
   );
 }
-// const hd = [
-//   {
-//     th: "The Christmas Shop",
-//     id: 1,
-//   },
-//   {
-//     th: "Christmas Lights",
-//     id: 2,
-//   },
-//   {
-//     th: "Christmas Outdoor Decor",
-//     id: 4,
-//   },
-// ];
-
-// const td = [
-//   {
-//     dt: "Shop now",
-//     dtlink: "https://www.walmart.com/cp/food/976759?povid=976759_variation_flyout_976759_food_Rweb_07_14",
-//     id: 1,
-//   },
-//   {
-//     dt: "All Christmas Lights",
-//     dtlink: "https://www.walmart.com/browse/home/christmas-lights/4044_2634414_7472650_3602319?povid=GlobalNav_DSK_Christmas-Lights",
-//     id: 2,
-//   },
-//   {
-//     dt: "Christmas Inflatables",
-//     dtlink: "https://www.walmart.com/browse/home/outdoor-christmas-decorations/4044_2634414_7472650_4622223?povid=GlobalNav_DSK_Christmas-Outdoor",
-//     id: 3,
-//   },
-//   {
-//     dt: "Dolls & Dollhouses",
-//       dtlink: "https://www.walmart.com/cp/dolls-dollhouses/4187?povid=GlobalNav_DSK_Toys-VideoGamesToysDolls-Dollhouses",
-//     id: 4,
-//   },
-//   {
-//     dt: "Christmas Installation",
-//       dtlink: "https://www.walmart.com/cp/christmas-light-installation/8428919?povid=GlobalNav_DSK_Christmas-LightService",
-//     id: 5,
-//   },
-//   {
-//     dt: "Christmas Books",
-//       dtlink: "https://www.walmart.com/browse/books/christmas-advent-kids-books/3920_582053_585922_585988?povid=GlobalNav_DSK_Christmas-Books",
-//     id: 6,
-//   },
-// ];
-
 
 const id1 = [
     {
@@ -250,73 +202,3 @@ const id1 = [
       },
     ];
     
-// Preschool Toys
-// 
-// Ages 8 to 11 years
-// Ages 12+ years
-// Featured Brands
-// Shop all Toy Brands
-// Barbie
-// LEGO
-// Squishmallows
-// Star Wars
-// Fisher-Price
-// Favorite Characters
-// Character Shop
-// Black Panther
-// Bluey
-// CoComelon
-// Paw Patrol
-// Toys
-// Shop all Toys
-// LEGO & Building Sets
-// Dolls & Dollhouses
-// Action Figures
-// Cars, Drones & RC
-// Plush Animals
-// Pretend Play
-// Arts & Crafts
-// Learning Toys
-// S.T.E.A.M.
-// Games & Puzzles
-// Outdoor Play
-// Shop all Outdoor Play
-// Swing Sets
-// Kids' Playhouses
-// NERF & Blaster Toys
-// Sports Toys
-// Trampolines
-// Swimming Pools & Supplies
-// Ride Ons
-// Shop all Ride Ons
-// Hoverboards
-// Scooters
-// Skates & Skateboards
-// Kids Bikes
-// Shop all Kids Bikes
-// Helmets & Pads
-// Collectibles
-// Shop all Collectibles
-// Funko Shop
-// Trading Cards
-// Collectible Action Figures
-// Collectible Dolls
-// Vinyl Figures
-// Bobbleheads
-// Coins & Bullion
-// Video Games
-// Shop all Video Games
-// Video game accessories
-// Video game deals
-// New in video games
-// Virtual Reality
-// Shop all VR
-// Meta VR
-// VR Accessories
-// VR Headsets
-// Arcade & retro
-// Shop all Arcade & retro
-// Xbox
-
-
-   
