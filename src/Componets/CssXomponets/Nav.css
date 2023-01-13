@@ -74,7 +74,7 @@ input[type="search"]{
     width: 90%;
     width: 100%;
     padding: 9px;
-    border-radius: 32px;
+    
     border: none;
     padding-top: 12px!important;
     padding-left: 22px;
@@ -85,4 +85,45 @@ form.nav-item {
 }
 .InNav{
     position: relative;
+}
+
+.searchdata{
+  width: 100%;
+  color: black;
+}
+
+.serachImage img {
+  width: 100%;
+  /* aspect-ratio: 2/1; */
+  object-fit: cover;
+}
+.serachImage {
+  width: 16%;
+  aspect-ratio: 2/1;
+}
+.dataShow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9px;
+}
+.searchDescrip {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.pos_sera{
+  position: relative;
+}
+.parent_postion{
+  width: 100%;
+  position: absolute;
+}
+.postion_serach{
+  border-bottom-left-radius: 20px;
+  width: 95%;
+  background: white;
+  margin: auto;
+  border-bottom-right-radius: 20px;
+ 
 }

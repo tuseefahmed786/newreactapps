@@ -19,7 +19,7 @@ export default function Product() {
     singalProduct(productId);
   }
 
-  
+
   function PrLoop(props) {
     return (
     
@@ -32,7 +32,7 @@ export default function Product() {
        
   
             <div className="button_absolute" id={props.idess}>
-              <div className="pr_button_align dp_flex_allcenter"   >
+              <div className="pr_button_align pr_button_align_hover dp_flex_allcenter"   >
               <button id={props.idess}>Open It</button>
               </div>
             </div>

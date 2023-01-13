@@ -12,7 +12,20 @@ console.log(singa)
     return {
       ...state,
       singal: singa,
-    };
+    }
+  }
+
+  if(action.type == "Despression"){
+    console.log(action.payload)
+  }
+
+  if(action.type == "Search_product"){
+    const searchvalues = action.allproductForSearch.filter((e)=>{
+      return (action.searchContent.length >= 1 ? e.desPr.match(action.searchContent): null)
+    })
+      return {
+        searchpr:searchvalues
+      }
   }
 }
 

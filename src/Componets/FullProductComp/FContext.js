@@ -25,6 +25,7 @@ const FullPage = createContext();
 function FullProductContext({ children }) {
   const orginalValue = {
     singal: [],
+    searchpr:[]
   };
   const [state, dispatch] = useReducer(FullReducer, orginalValue);
 
@@ -40,6 +41,18 @@ function FullProductContext({ children }) {
       payload: allProduct,
     });
   };
+
+  const searchProduct = (searchValue) =>{
+    const allProduct = prdata.map((looppr, index) => {
+      return looppr;
+    })
+    dispatch({
+      type:"Search_product",
+      allproductForSearch:allProduct,
+      searchContent:searchValue
+    })
+  }
+
   const dispatchFUn = (allProducts) => {
     dispatch({ type: "AllProdcts", payload: allProducts });
   };
@@ -52,7 +65,7 @@ function FullProductContext({ children }) {
   }, []);
   return (
     <>
-      <FullPage.Provider value={{ ...state, singalProduct, dispatch }}>
+      <FullPage.Provider value={{ ...state, singalProduct, dispatch ,searchProduct}}>
         {children}
       </FullPage.Provider>
     </>
@@ -72,7 +85,7 @@ const prdata = [
     sideimage1:F2P2,
     sideimage2:F2P3,
     btncategiory: "Option",
-    pricepr: "$78",
+    pricepr: 78,
     desPr:
       "PocketTunes Bone Conduction Instant Mini Speakers with Bluetooth Wireless Technology, Pack of 2 (Sierra Blue)",
     shipping: "3+ Days Shipping",
@@ -84,7 +97,7 @@ const prdata = [
     sideimage1:F12,
     sideimage2:F13,
     btncategiory: "Option",
-    pricepr: "$56.6",
+    pricepr: 56.6,
     desPr: "Time And Tru Women's Crewneck Tee with Long Sleeves",
     shipping: "4+ Days Shipping",
   },
@@ -95,7 +108,7 @@ const prdata = [
     sideimage1:F14,
     sideimage2:F15,
     btncategiory: "Option",
-    pricepr: "$89.6",
+    pricepr: 89.6,
     desPr:
       "Keurig K-Duo Essentials Single Serve & Carafe Coffee Maker, Moonlight Gray",
     shipping: "1+ Days Shipping",
@@ -107,7 +120,7 @@ const prdata = [
     fullimage: F9,
     sideimage1:F10,
     sideimage2:F11,
-    pricepr: "$34.9",
+    pricepr: 34.9,
     desPr: "Time And Tru Women's Crewneck Tee with Long Sleeves",
     shipping: "4+ Days Shipping",
   },
@@ -118,7 +131,7 @@ const prdata = [
     sideimage1:F16,
     sideimage2:F17,
     btncategiory: "Option",
-    pricepr: "$46.21",
+    pricepr: 46.21,
     desPr: "Windows 10 Home Laptop Computer, XOPPOX 2022 Newest 13.5 UHD 3000 x 2000 Clear Screen PC Laptops with Intel Celeron N4020 Dual Core 8GB RAM 128GB SSD for Students School Office, Gray",
     shipping: "7+ Days Shipping",
   },

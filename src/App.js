@@ -11,10 +11,10 @@ export default function App() {
     <>
 
 
-    <BrowserRouter>
+    <BrowserRouter basemname={`/${process.env.PUBLIC_URL}`}>
       <Routes>
-        <Route path="/" element={<Navbar />}>
-          <Route index element={<HeroSection />} />
+        <Route exact path="/newreactapps" element={<Navbar />}>
+          <Route path="/newreactapps" element={<HeroSection />} />
           <Route path="pagewoking" element={<Working/>} />
         <Route path="carts" element={<AddToCart/>}/>
   

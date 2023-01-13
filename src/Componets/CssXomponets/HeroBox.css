@@ -193,7 +193,7 @@ font-size: 0.9rem;
 font-weight: 700;
 cursor: pointer;
 }
-.pr_button_align:hover{
+.pr_button_align_hover:hover{
     background-color: #004f9a;
 }
 .Second_align h6{
@@ -278,7 +278,7 @@ width: fit-content;
 }
 .allproduct_alignments{
     flex-wrap: wrap;
-    margin: 0 1.5rem;
+    margin: 1.5rem 1.5rem;
 }
 
 .allproduct_alignments a {

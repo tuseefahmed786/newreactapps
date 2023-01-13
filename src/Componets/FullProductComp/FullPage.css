@@ -2,10 +2,11 @@
   margin-top: 2rem;
 }
 .left_Mini_Products {
-  max-width: 600px !important;
+  max-width: 400px !important;
+ 
 }
 .left_Mini_Products div img {
-  width: 70%;
+  width: 100%;
   margin: auto;
   display: block;
 }
@@ -75,8 +76,35 @@
   aspect-ratio: 2/2;
   object-fit: contain;
 }
-
+.crus{
+  cursor: initial;
+}
 button {
   background: transparent;
   border: none;
+}
+
+
+
+
+
+
+
+@media screen and ( max-width:1260px){
+  .hidd{
+      order: 3;
+      
+  }
+ 
+} 
+
+
+@media screen and ( max-width:380px){
+  .left_Mini_Products {
+    width: 100%;
+    padding-right: 0.7rem;
+    padding-left: 1.7rem!important;
+      
+  }
+ 
 }

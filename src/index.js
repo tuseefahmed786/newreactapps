@@ -5,16 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ProductSend } from './Componets/Context/ProductContext';
 import { FullProductContext } from './Componets/FullProductComp/FContext';
+import { CartContext } from './Componets/AddToCartComp/CartContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
  
     <FullProductContext>
+    <CartContext>
      <ProductSend>
   <React.StrictMode>
     <App />
   </React.StrictMode>
   </ProductSend>
+  </CartContext>
   </FullProductContext>
 
  

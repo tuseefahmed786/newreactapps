@@ -1,33 +1,37 @@
-import { React , useState} from "react";
+import { React, useState } from "react";
 import { UseFullPageHook } from "./FContext";
 import "./FullPage.css";
+import { UseCart } from "../AddToCartComp/CartContext";
 import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Rating from "@mui/material/Rating";
-
 import ElectricCarOutlinedIcon from "@mui/icons-material/ElectricCarOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import RemoveIcon from "@mui/icons-material/Remove";
+import AddIcon from "@mui/icons-material/Add";
 import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
 export default function FullProduct() {
   const { singal } = UseFullPageHook();
-const [first, setfirst] = useState(null)
-const [second, setSecond] = useState(true)  
+  const [first, setfirst] = useState(null);
+  const [second, setSecond] = useState(true);
 
-    function click1(params) {
-      const sideImage1 =  singal[0].sideimage1
-      setSecond(false)
-      setfirst(sideImage1)
-    }
-    function unclick(params) {
-      setSecond(true)
-    }
-    function click2(params) {
-      const sideImage1 =  singal[0].sideimage2
-      setSecond(false)
-      setfirst(sideImage1)
-    }
+  //  when User Click On Side image or hover then below function will have worked
+  function click1(params) {
+    const sideImage1 = singal[0].sideimage1;
+    setSecond(false);
+    setfirst(sideImage1);
+  }
+  function unclick(params) {
+    setSecond(true);
+  }
+  function click2(params) {
+    const sideImage1 = singal[0].sideimage2;
+    setSecond(false);
+    setfirst(sideImage1);
+  }
+
   return (
     <>
       <div className="fullpage_product heroBox">
@@ -45,6 +49,7 @@ const [second, setSecond] = useState(true)
                   trues={second}
                   unclick={unclick}
                   click2={click2}
+                
                 />
               );
             })
@@ -55,6 +60,35 @@ const [second, setSecond] = useState(true)
 }
 
 function PageInner(props) {
+  const [addtocart, setaddtocart] = useState(true);
+  const [countquantiy, setcountquantiy] = useState(0)
+  const {addd} = UseCart()
+  const { singal } = UseFullPageHook();
+  function changeCart() {
+    setcountquantiy(0)
+    setaddtocart(false);
+   
+  }
+  
+
+function addtion(){
+  setcountquantiy(countquantiy + 1)
+ addd(singal ,{quantity:countquantiy + 1})
+ if(countquantiy >= 1){
+  setaddtocart(false)
+ }
+}
+function minize(){
+ setcountquantiy((pervalue) => pervalue - 1)
+
+    addd(singal ,{quantity:countquantiy - 1})
+
+    if(countquantiy - 1 < 0 ){
+       setaddtocart(true)
+    }
+
+    }
+
   // Material Ui Code
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -67,30 +101,38 @@ function PageInner(props) {
   return (
     <Grid
       container
+      className="side"
       spacing={2}
       justifyContent="space-around"
       alignItems="flex-start"
     >
-     <Grid item xs={2} style={{marginTop:"2rem"}}>
-     <button onMouseEnter={props.click1} onMouseLeave={props.unclick}>
-        <Item className="side_image">
-          <img src={props.sideimage1} alt="here is side img" />
-        </Item>
+      <Grid
+        columns={{ xs: 2, sm: 1 }}
+        item
+        style={{ marginTop: "2rem" }}
+        className="hidd"
+      >
+        <button onMouseEnter={props.click1} onMouseLeave={props.unclick}>
+          <Item className="side_image">
+            <img src={props.sideimage1} alt="here is side img" />
+          </Item>
         </button>
         <button onMouseEnter={props.click2} onMouseLeave={props.unclick}>
-        <Item className="side_image">
-          <img src={props.sideimage2} alt="here is side img" />
-        </Item>
+          <Item className="side_image">
+            <img src={props.sideimage2} alt="here is side img" />
+          </Item>
         </button>
-
       </Grid>
-      <Grid item xs={6} className="left_Mini_Products">
+      <Grid item columns={{ xs: 6, sm: 6 }} className="left_Mini_Products">
         <Item>
-          <img src={props.trues ? props.mainimages: props.mainimagesec} alt="here is side img" />
+          <img
+            src={props.trues ? props.mainimages : props.mainimagesec}
+            alt="here is side img"
+          />
         </Item>
       </Grid>
-      <Grid item xs={4} style={{ width: "400px" }}>
-        <Item >
+      <Grid item columns={{ xs: 4, sm: 6 }}>
+        <Item style={{ width: "90%", margin: "auto" }}>
           <div className="fp_full_product">
             <p>{props.fpDescription}</p>
             <h6>Now {props.fpPrice}</h6>
@@ -100,34 +142,49 @@ function PageInner(props) {
                 value="4"
                 style={{ color: "black", fontSize: "0.9rem" }}
                 readOnly
-              />{" "}
+              />
               <span> (4.3) Reviews</span>
             </div>
-            <div className="button_fullpage">
-              <div className="pr_button_align dp_flex_allcenter">
-                <button>Add to cart</button>
+
+            {addtocart ? (
+              <div className="button_fullpage aa" onClick={changeCart}>
+                <div className="pr_button_align dp_flex_allcenter">
+                  <button>Add to cart</button>
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className="button_fullpage crus">
+                <div className="pr_button_align dp_flex_allcenter">
+                  <button className="btn_hover" >
+                    <RemoveIcon fontSize="small" onClick={minize} />
+                  </button>
+                  <span style={{color:"white"}}>{countquantiy} </span>
+                  <button>
+                    <AddIcon fontSize="small" onClick={addtion} 
+                    />
+                  </button>
+                </div>
+              </div>
+            )}
+
             <div className="br_for_Pr">
               <hr className="hr_pr" />
             </div>
             <div className="productdeatils">
               <div className="shipping same_icon">
-                <ElectricCarOutlinedIcon className="marg_in" />{" "}
+                <ElectricCarOutlinedIcon className="marg_in" />
                 <span>
-                  {" "}
-                  Free pickup, tomorrow at{" "}
+                  Free pickup, tomorrow at
                   <a href="/">Sacramento Supercenter</a>
                 </span>
               </div>
               <div className="location same_icon">
-                <LocationOnOutlinedIcon className="marg_in" />{" "}
+                <LocationOnOutlinedIcon className="marg_in" />
                 <span> Aisle H3</span>
               </div>
               <div className="cart same_icon">
-                <ShoppingCartOutlinedIcon className="marg_in" />{" "}
+                <ShoppingCartOutlinedIcon className="marg_in" />
                 <span>
-                  {" "}
                   Delivery from <a href="/">storeCheck eligibility</a>
                 </span>
               </div>
@@ -135,7 +192,6 @@ function PageInner(props) {
               <div className="truck same_icon">
                 <LocalShippingOutlinedIcon className="marg_in" />{" "}
                 <span>
-                  {" "}
                   Sold and shipped by <a href="/">Walmart.com</a>
                 </span>
               </div>
@@ -146,3 +202,6 @@ function PageInner(props) {
     </Grid>
   );
 }
+
+
+// /{props.addtocartvalue < 0 ? setaddtocart(true):console.log("value has 0 or less than so that button2 hiddenb")}
