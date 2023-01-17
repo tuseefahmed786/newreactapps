@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/newreactapps/static/css/main.7697d2ff.css",
-    "main.js": "/newreactapps/static/js/main.74ea5a21.js",
+    "main.css": "/newreactapps/static/css/main.f5e56952.css",
+    "main.js": "/newreactapps/static/js/main.2539e60b.js",
     "static/js/787.bc7d429a.chunk.js": "/newreactapps/static/js/787.bc7d429a.chunk.js",
     "static/media/pic3.jpeg": "/newreactapps/static/media/pic3.49683d7679810708a709.jpeg",
     "static/media/p2p3.jpg": "/newreactapps/static/media/p2p3.df1956eb3c9eaa13c5db.jpg",
@@ -11,6 +11,9 @@
     "static/media/pic2.jpeg": "/newreactapps/static/media/pic2.d168d5e0a4906398126f.jpeg",
     "static/media/p4p2.jpeg": "/newreactapps/static/media/p4p2.3eaec5eb0320ce019a97.jpeg",
     "static/media/p4p1.jpeg": "/newreactapps/static/media/p4p1.1ce8d16edbb15e6cc38f.jpeg",
+    "static/media/HelveticaNeue.ttf": "/newreactapps/static/media/HelveticaNeue.50a6cd509ab1a89a5956.ttf",
+    "static/media/HelveticaNeue Light.ttf": "/newreactapps/static/media/HelveticaNeue Light.2d7491fe233df3ce53e2.ttf",
+    "static/media/Helvetica Neu Bold.ttf": "/newreactapps/static/media/Helvetica Neu Bold.61acdee6f288cddccf23.ttf",
     "static/media/side image.jpeg": "/newreactapps/static/media/side image.1e62654f8bab2402a5e7.jpeg",
     "static/media/heroimage1.webp": "/newreactapps/static/media/heroimage1.19a52fba71a3fe9d258c.webp",
     "static/media/p5p1.jpg": "/newreactapps/static/media/p5p1.e1bb3b7ee8ded1c03028.jpg",
@@ -38,12 +41,12 @@
     "static/media/p1.webp": "/newreactapps/static/media/p1.bddb531e0f4afa0b54e7.webp",
     "index.html": "/newreactapps/index.html",
     "static/media/p3.webp": "/newreactapps/static/media/p3.48f8996fa019ac541c75.webp",
-    "main.7697d2ff.css.map": "/newreactapps/static/css/main.7697d2ff.css.map",
-    "main.74ea5a21.js.map": "/newreactapps/static/js/main.74ea5a21.js.map",
+    "main.f5e56952.css.map": "/newreactapps/static/css/main.f5e56952.css.map",
+    "main.2539e60b.js.map": "/newreactapps/static/js/main.2539e60b.js.map",
     "787.bc7d429a.chunk.js.map": "/newreactapps/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7697d2ff.css",
-    "static/js/main.74ea5a21.js"
+    "static/css/main.f5e56952.css",
+    "static/js/main.2539e60b.js"
   ]
 }
