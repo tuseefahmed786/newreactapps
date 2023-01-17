@@ -56,6 +56,12 @@
   align-items: center;
   margin-bottom: 12px;
 }
+.same_icon svg{
+  color: rgba(0, 0, 0, 0.8);
+}
+.same_icon span{
+color: rgba(0, 0, 0, 0.6);
+}
 .same_icon span {
   font-size: 14px;
 }
